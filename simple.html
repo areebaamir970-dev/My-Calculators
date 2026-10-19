@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="tabs" aria-label="Calculators">
+    <a href="index.html">Home</a>
+    <a href="simple.html" class="on">Simple</a>
+    <a href="scientific.html" >Scientific</a>
+  </nav>
+  <main class="desk">
+    <section class="device simple" aria-label="Simple calculator">
+      <div class="lcd">
+        <div class="lcd-top" id="top"></div>
+        <div class="lcd-main" id="main">0</div>
+      </div>
+      
+      <div class="pad" id="pad">
+      <button class="k fn" data-a="clear">C</button>
+      <button class="k fn" data-a="back">Del</button>
+      <button class="k fn" data-a="percent">%</button>
+      <button class="k op" data-a="op" data-v="/">÷</button>
+      <button class="k" data-a="num" data-v="7">7</button>
+      <button class="k" data-a="num" data-v="8">8</button>
+      <button class="k" data-a="num" data-v="9">9</button>
+      <button class="k op" data-a="op" data-v="*">×</button>
+      <button class="k" data-a="num" data-v="4">4</button>
+      <button class="k" data-a="num" data-v="5">5</button>
+      <button class="k" data-a="num" data-v="6">6</button>
+      <button class="k op" data-a="op" data-v="-">−</button>
+      <button class="k" data-a="num" data-v="1">1</button>
+      <button class="k" data-a="num" data-v="2">2</button>
+      <button class="k" data-a="num" data-v="3">3</button>
+      <button class="k op" data-a="op" data-v="+">+</button>
+      <button class="k" data-a="sign">±</button>
+      <button class="k" data-a="num" data-v="0">0</button>
+      <button class="k" data-a="num" data-v=".">.</button>
+      <button class="k eq" data-a="equals">=</button>
+      </div>
+    </section>
+    <aside class="tape" aria-label="History">
+      <div class="tape-head"><h2>Paper tape</h2><button id="clearTape" type="button">Clear</button></div>
+      <ol id="tapeList"></ol>
+      <p id="tapeEmpty">Your sums will show up here. Click a result to use it again.</p>
+    </aside>
+  </main>
+  <script src="simple.js"></script>
+</body>
+</html>

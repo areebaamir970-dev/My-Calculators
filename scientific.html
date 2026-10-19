@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="tabs" aria-label="Calculators">
+    <a href="index.html">Home</a>
+    <a href="simple.html" >Simple</a>
+    <a href="scientific.html" class="on">Scientific</a>
+  </nav>
+  <main class="desk">
+    <section class="device scientific" aria-label="Scientific calculator">
+      <div class="lcd">
+        <div class="lcd-top" id="top"></div>
+        <div class="lcd-main" id="main">0</div>
+      </div>
+      <button class="mode" id="modeBtn" type="button">Angles: Degrees</button>
+      <div class="pad" id="pad">
+      <button class="k fn" data-v="sin(">sin</button>
+      <button class="k fn" data-v="cos(">cos</button>
+      <button class="k fn" data-v="tan(">tan</button>
+      <button class="k fn" data-v="log(">log</button>
+      <button class="k fn" data-v="ln(">ln</button>
+      <button class="k fn" data-v="√(">√</button>
+      <button class="k fn" data-v="^2">x²</button>
+      <button class="k fn" data-v="^">xʸ</button>
+      <button class="k fn" data-v="!">n!</button>
+      <button class="k fn" data-v="π">π</button>
+      <button class="k fn" data-v="e">e</button>
+      <button class="k fn" data-v="(">(</button>
+      <button class="k fn" data-v=")">)</button>
+      <button class="k clr" data-a="clear">C</button>
+      <button class="k clr" data-a="back">Del</button>
+      <button class="k" data-v="7">7</button>
+      <button class="k" data-v="8">8</button>
+      <button class="k" data-v="9">9</button>
+      <button class="k op" data-v="÷">÷</button>
+      <button class="k op" data-v="%">%</button>
+      <button class="k" data-v="4">4</button>
+      <button class="k" data-v="5">5</button>
+      <button class="k" data-v="6">6</button>
+      <button class="k op" data-v="×">×</button>
+      <button class="k op" data-v="−">−</button>
+      <button class="k" data-v="1">1</button>
+      <button class="k" data-v="2">2</button>
+      <button class="k" data-v="3">3</button>
+      <button class="k op" data-v="+">+</button>
+      <button class="k" data-v="0">0</button>
+      <button class="k" data-v=".">.</button>
+      <button class="k fn" data-a="ans">Ans</button>
+      <button class="k eq span2" data-a="equals">=</button>
+      </div>
+    </section>
+    <aside class="tape" aria-label="History">
+      <div class="tape-head"><h2>Paper tape</h2><button id="clearTape" type="button">Clear</button></div>
+      <ol id="tapeList"></ol>
+      <p id="tapeEmpty">Your sums will show up here. Click a result to use it again.</p>
+    </aside>
+  </main>
+  <script src="scientific.js"></script>
+</body>
+</html>
